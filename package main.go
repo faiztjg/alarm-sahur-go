@@ -63,7 +63,7 @@ func serveHTML(w http.ResponseWriter, r *http.Request) {
 	</div>
 
 	<div class='box'>
-		<h3 style="color: #ff9800;">🕹️ Kontrol Manual</h3>
+		<h3 style="color: #ff9800;">Kontrol Manual</h3>
 		<button class="button btn-on" onclick="nyalakan()"> NYALAKAN AIR</button>
 		<button class="button btn-off" onclick="matikan()"> MATIKAN AIR</button>
 		<p id="pesan-manual" style="color:#00bcd4; font-size: 14px; height: 15px; margin:0;"></p>
