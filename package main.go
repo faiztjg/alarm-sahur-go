@@ -49,7 +49,7 @@ func serveHTML(w http.ResponseWriter, r *http.Request) {
 		input { width: 90%; padding: 10px; margin: 5px 0 15px 0; border-radius: 5px; border: none; font-size: 16px; text-align: center; background: #ddd;}
 	</style></head><body>
 
-	<h2>💧 Alarm Sahur PAJA</h2>
+	<h2>Alarm Sahur PAJA</h2>
 	<p style="margin-top:0; color:#aaa; font-size:14px;">Kontrol Jarak Jauh (Cloud)</p>
 	
 	<div class='box'>
@@ -58,14 +58,14 @@ func serveHTML(w http.ResponseWriter, r *http.Request) {
 		<input type="time" id="jam" value="` + currTime + `">
 		<p style="margin-bottom: 5px;">Durasi Semprot (Detik):</p>
 		<input type="number" id="durasi" value="` + currDur + `">
-		<button class="button btn-save" onclick="simpanSetting()">💾 SIMPAN JADWAL</button>
+		<button class="button btn-save" onclick="simpanSetting()"> SIMPAN JADWAL</button>
 		<p id="pesan-setting" style="color:#00bcd4; font-size: 14px; height: 15px; margin:0;"></p>
 	</div>
 
 	<div class='box'>
 		<h3 style="color: #ff9800;">🕹️ Kontrol Manual</h3>
-		<button class="button btn-on" onclick="nyalakan()">💦 NYALAKAN AIR</button>
-		<button class="button btn-off" onclick="matikan()">🛑 MATIKAN AIR</button>
+		<button class="button btn-on" onclick="nyalakan()"> NYALAKAN AIR</button>
+		<button class="button btn-off" onclick="matikan()"> MATIKAN AIR</button>
 		<p id="pesan-manual" style="color:#00bcd4; font-size: 14px; height: 15px; margin:0;"></p>
 	</div>
 
