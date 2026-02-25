@@ -10,7 +10,7 @@ import (
 var (
 	pumpStatus bool
 	alarmTime  string = "03:30" // Default jam alarm
-	duration   string = "10"    // Default durasi 10 detik
+	duration   string = "5"    // Default durasi 5 detik
 	mutex      sync.Mutex
 )
 
@@ -53,7 +53,7 @@ func serveHTML(w http.ResponseWriter, r *http.Request) {
 	<p style="margin-top:0; color:#aaa; font-size:14px;">Kontrol Jarak Jauh (Cloud)</p>
 	
 	<div class='box'>
-		<h3 style="color: #4CAF50;">⚙️ Setting Otomatis</h3>
+		<h3 style="color: #4CAF50;">Setting Otomatis</h3>
 		<p style="margin-bottom: 5px;">Jam Bangun (WIB):</p>
 		<input type="time" id="jam" value="` + currTime + `">
 		<p style="margin-bottom: 5px;">Durasi Semprot (Detik):</p>
